@@ -5,26 +5,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="785e6f88-7830-4586-a10c-0ab2e0bbb85d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/RedditDataSentimentAnalysis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dags/reddit_sentiment_dag.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_cleaning.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data_ingestion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/mongo_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/postgre_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/oauth_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reddit_client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sentiment_analysis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/init_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/save_mongo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/dcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dags/reddit_sentiment_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/reddit_sentiment_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/dags-folder/reddit_sentiment_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/dags-folder/reddit_sentiment_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_alias.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_alias.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_alias_with_no_taskflow.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_alias_with_no_taskflow.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_with_watchers.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_asset_with_watchers.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_assets.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_assets.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_branch_labels.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_branch_labels.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_branch_python_dop_operator_3.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_branch_python_dop_operator_3.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_complex.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_complex.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_custom_weight.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_custom_weight.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dag_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dag_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_display_name.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_display_name.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dynamic_task_mapping.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dynamic_task_mapping.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_dynamic_task_mapping_with_no_taskflow_operators.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_inlet_event_extra.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_inlet_event_extra.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_kubernetes_executor.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_kubernetes_executor.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_latest_only_with_trigger.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_latest_only_with_trigger.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_local_kubernetes_executor.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_local_kubernetes_executor.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_nested_branch_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_nested_branch_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_outlet_event_extra.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_outlet_event_extra.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_params_trigger_ui.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_params_trigger_ui.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_params_ui_tutorial.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_params_ui_tutorial.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_passing_params_via_test_command.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_passing_params_via_test_command.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_setup_teardown.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_setup_teardown.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_setup_teardown_taskflow.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_setup_teardown_taskflow.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_simplest_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_simplest_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_skip_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_skip_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_task_group.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_task_group.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_task_group_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_task_group_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_time_delta_sensor_async.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_time_delta_sensor_async.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_trigger_target_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_trigger_target_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_workday_timetable.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_workday_timetable.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_xcom.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_xcom.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_xcomargs.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/example_xcomargs.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/decreasing_priority_weight_strategy.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/decreasing_priority_weight_strategy.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/event_listener.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/event_listener.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/listener_plugin.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/listener_plugin.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/workday.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/plugins/workday.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_bash_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_bash_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_bash_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_bash_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_datetime_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_datetime_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_day_of_week_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_day_of_week_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_operator_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_branch_operator_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_child_deferrable.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_child_deferrable.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_marker_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_marker_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_parent_deferrable.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_external_task_parent_deferrable.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_latest_only.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_latest_only.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_python_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_python_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_python_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_python_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_sensor_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_sensor_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_sensors.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_sensors.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_short_circuit_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_short_circuit_decorator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_short_circuit_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_short_circuit_operator.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_trigger_controller_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/standard/example_trigger_controller_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_dag.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_objectstorage.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_objectstorage.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_api.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_api.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_api_virtualenv.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_api_virtualenv.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_templates.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/dag_processor/2025-08-10/example_dags/tutorial_taskflow_templates.py.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/mongo_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/mongo_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/postgre_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/postgre_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reddit_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reddit_client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +94,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Horyzonn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Horyzonn/reddit-sentiment-analysis-data-pipeline.git&quot;,
+    &quot;accountId&quot;: &quot;461ef4a1-83a0-4511-9c49-20de1ebbbfb7&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -54,16 +122,42 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Python.data_ingestion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dcm.executor&quot;: &quot;Run&quot;,
     &quot;Python.oauth_helper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reddit_client.executor&quot;: &quot;Run&quot;,
     &quot;Python.reddit_sentiment_dag.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.token.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.data_ingestion">
+    <configuration name="data_ingestion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="RedditDataSentimentAnalysis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/data_ingestion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="RedditDataSentimentAnalysis" />
       <option name="ENV_FILES" value="" />
@@ -88,6 +182,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.data_ingestion" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
