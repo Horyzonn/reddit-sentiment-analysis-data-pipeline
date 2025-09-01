@@ -1,0 +1,6 @@
+{"timestamp":"2025-08-28T03:49:40.927661","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-28T03:49:40.929528","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_sentiment_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-28T03:49:41.191814Z","level":"info","event":"[INFO] Đang thu thập dữ liệu từ r/Vietnam","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T03:50:41.189534Z","level":"info","event":"[INFO] Đang thu thập dữ liệu từ r/technology","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T03:50:46.212723Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"success"}},"logger":"task"}
+{"timestamp":"2025-08-28T03:50:46.227334Z","level":"error","event":"Task killed!","logger":"task"}

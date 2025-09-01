@@ -1,8 +1,11 @@
 import os
+import json
 from datetime import datetime
 from src.db.mongo_client import save_raw_data
-from reddit_client import reddit
+from src.reddit_client import reddit
 
+#Lưu tạm vào file JSON
+TEMP_FILE = "/opt/airflow/src/tmp/temp_ingest_data.json"
 
 def convert_reddit_timestamp(timestamp):
     """Chuyển đổi Reddit timestamp (UTC) sang ISO format"""
@@ -74,23 +77,27 @@ def fetch_subreddit_data(subreddit_name, num_posts=50, num_comments=50):
 
     return collected_data
 
-
-def ingest_all_subreddits():
-    """Thu thập dữ liệu từ tất cả subreddits đã định nghĩa"""
+#Lưu vào MongoDB
+def ingest_reddit_data():
+    """Thu thập dữ liệu và trả về dict {subreddit_name: data}"""
     subreddits = ["Vietnam", "technology", "worldnews", "science"]
-
+    all_data = {}
     for sub in subreddits:
         print(f"[INFO] Đang thu thập dữ liệu từ r/{sub}")
-        try:
-            data = fetch_subreddit_data(sub)
-            if data:
-                save_raw_data(collection_name=sub, data=data)
-                print(f"[INFO] Đã lưu {len(data)} documents vào MongoDB (r/{sub})")
-            else:
-                print(f"[WARNING] Không có dữ liệu từ r/{sub}")
-        except Exception as e:
-            print(f"[ERROR] Lỗi khi xử lý r/{sub}: {str(e)}")
+        data = fetch_subreddit_data(sub)
+        all_data[sub] = data
+        # 🔹 Đảm bảo thư mục tmp tồn tại
+    os.makedirs(os.path.dirname(TEMP_FILE), exist_ok=True)
+
+    # Ghi dữ liệu ra file JSON
+    with open(TEMP_FILE, "w", encoding="utf-8") as f:
+        json.dump(all_data, f, ensure_ascii=False, indent=2)
+
+    print(f"[INFO] Dữ liệu đã được lưu tạm vào {TEMP_FILE}")
+
+    # Chỉ return path để dùng trong DAG (tránh XCom quá tải)
+    return TEMP_FILE
 
 
 if __name__ == "__main__":
-    ingest_all_subreddits()
+    ingest_reddit_data()

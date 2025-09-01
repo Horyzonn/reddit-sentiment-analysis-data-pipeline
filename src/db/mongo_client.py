@@ -2,7 +2,7 @@ from pymongo import MongoClient, errors
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Cho phép chạy độc lập ngoài Airflow
+load_dotenv(dotenv_path="/opt/airflow/src/.env")
 
 def get_mongo_client():
     try:
@@ -11,6 +11,8 @@ def get_mongo_client():
     except errors.ConnectionFailure as e:
         print(f"[ERROR] Could not connect to MongoDB: {e}")
         raise
+
+
 
 def save_raw_data(collection_name, data):
     """
@@ -39,3 +41,4 @@ def save_raw_data(collection_name, data):
         print(f"[ERROR] Failed to insert data for '{collection_name}': {e}")
     finally:
         client.close()
+

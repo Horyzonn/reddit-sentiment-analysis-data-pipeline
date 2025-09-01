@@ -1,0 +1,7 @@
+{"timestamp":"2025-08-28T04:16:09.469297","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-08-28T04:16:09.470140","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/reddit_sentiment_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-08-28T04:16:09.996033Z","level":"info","event":"[INFO] Inserted 854 records into 'Vietnam'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T04:16:10.100983Z","level":"info","event":"[INFO] Inserted 1650 records into 'technology'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T04:16:10.180806Z","level":"info","event":"[INFO] Inserted 1426 records into 'worldnews'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T04:16:10.256724Z","level":"info","event":"[INFO] Inserted 1129 records into 'science'","chan":"stdout","logger":"task"}
+{"timestamp":"2025-08-28T04:16:10.265184","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
