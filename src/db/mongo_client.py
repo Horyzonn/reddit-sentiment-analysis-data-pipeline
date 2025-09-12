@@ -26,16 +26,18 @@ def save_raw_data(collection_name, data):
 
     try:
         client = get_mongo_client()
-        db = client["reddit_raw"]  # DB lưu dữ liệu thô
+        db = client["reddit_raw"]  # cố định DB lưu dữ liệu thô
         collection = db[collection_name]
 
-        # Optional: tránh insert trùng lặp bằng cách đặt _id là post/comment id
+        # tránh insert trùng lặp → đặt _id bằng id của post/comment
         for item in data:
             item["_id"] = item["id"]
 
         result = collection.insert_many(data, ordered=False)
         print(f"[INFO] Inserted {len(result.inserted_ids)} records into '{collection_name}'")
+
     except errors.BulkWriteError as bwe:
+        # log cảnh báo nếu có bản ghi trùng lặp bị skip
         print(f"[WARNING] Some duplicate entries skipped in '{collection_name}': {bwe.details}")
     except Exception as e:
         print(f"[ERROR] Failed to insert data for '{collection_name}': {e}")

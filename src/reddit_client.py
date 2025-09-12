@@ -11,6 +11,7 @@ reddit = praw.Reddit(
     client_secret=os.getenv("REDDIT_CLIENT_SECRET"),
     refresh_token=os.getenv("REDDIT_REFRESH_TOKEN"),
     user_agent="rdDataSentiment/0.1 by u/Horyzonix",
+    requestor_kwargs={"timeout": 60}
 )
 
 
