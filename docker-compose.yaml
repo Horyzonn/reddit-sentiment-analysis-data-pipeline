@@ -138,6 +138,27 @@ services:
     environment:
       ME_CONFIG_MONGODB_SERVER: mongodb
       ME_CONFIG_BASICAUTH: 'false'
+
+  streamlit:
+    build:
+      context: ./dashboard        # trỏ đúng đến thư mục chứa app.py
+      dockerfile: Dockerfile
+    container_name: reddit_streamlit
+    command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+    volumes:
+      - ./dashboard:/app          # mount code dashboard
+      - ./src:/app/src   #Lấy connection tới DB
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - POSTGRES_HOST=postgres
+      - POSTGRES_DB=reddit_db
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+    depends_on:
+      - postgres
+
   redis:
     # Redis is limited to 7.2-bookworm due to licencing change
     # https://redis.io/blog/redis-adopts-dual-source-available-licensing/

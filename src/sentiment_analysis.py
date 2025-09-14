@@ -3,10 +3,8 @@ import re
 import string
 import datetime
 import os
-import pandas as pd
 import psycopg2
 import psycopg2.extras
-from sqlalchemy import create_engine
 from src.db.mongo_client import get_mongo_client
 from transformers import pipeline, AutoTokenizer, AutoModelForSequenceClassification
 
@@ -87,7 +85,7 @@ def _bulk_upsert_comments(records):
 
     cols = [
         "comment_id","parent_post_id","parent_id","body","author","created_utc","score",
-        "depth","is_submitter","controversiality","edited","stickied",
+        "depth","is_submitter","controversiality","stickied",
         "sentiment_label","sentiment_score","collected_at"
     ]
 
@@ -109,7 +107,6 @@ def _bulk_upsert_comments(records):
       depth = EXCLUDED.depth,
       is_submitter = EXCLUDED.is_submitter,
       controversiality = EXCLUDED.controversiality,
-      edited = EXCLUDED.edited,
       stickied = EXCLUDED.stickied,
       sentiment_label = EXCLUDED.sentiment_label,
       sentiment_score = EXCLUDED.sentiment_score,
@@ -204,7 +201,6 @@ def run_sentiment_analysis(subreddit, sentiment_pipeline: pipeline, only_unproce
                 "depth": doc.get("depth"),
                 "is_submitter": doc.get("is_submitter"),
                 "controversiality": doc.get("controversiality"),
-                "edited": doc.get("edited"),
                 "stickied": doc.get("stickied"),
                 "sentiment_label": analysis["label"],
                 "sentiment_score": float(analysis["score"]),

@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="785e6f88-7830-4586-a10c-0ab2e0bbb85d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dashboard/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dashboard/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/airflow.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/config/airflow.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dags/reddit_sentiment_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/dags/reddit_sentiment_dag.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gitignore.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/collection-0-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-0-1190505178614225357.wt" afterDir="false" />
@@ -27,17 +26,10 @@
       <change beforePath="$PROJECT_DIR$/mongo_data/index-5-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-5-1190505178614225357.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-6--1458238280128869629.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-6--1458238280128869629.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-7-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-7-1190505178614225357.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000027" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000040" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_cleaning.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/subreddits.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/mongo_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/mongo_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/init_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reddit_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/reddit_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/postgre_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/postgre_client.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sentiment_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentiment_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tmp/temp_ingest_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/tmp/temp_ingest_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/dcm.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

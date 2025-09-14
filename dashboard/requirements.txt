@@ -1,0 +1,11 @@
+pandas
+sqlalchemy
+psycopg2-binary
+supabase
+streamlit
+python-dotenv
+altair
+matplotlib
+seaborn
+praw
+python-dotenv
