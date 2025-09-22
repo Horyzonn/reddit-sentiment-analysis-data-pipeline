@@ -16,7 +16,7 @@ def convert_reddit_timestamp(timestamp):
     return datetime.utcfromtimestamp(timestamp).isoformat() if timestamp else None
 
 
-def fetch_and_save_subreddit(subreddit_name, num_posts=5, num_comments=10, max_retries=3):
+def fetch_and_save_subreddit(subreddit_name, num_posts=50, num_comments=50, max_retries=3):
     """Thu thập dữ liệu Reddit với retry/backoff"""
     attempt = 0
     collected_data = []

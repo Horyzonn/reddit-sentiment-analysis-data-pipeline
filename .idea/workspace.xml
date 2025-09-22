@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="785e6f88-7830-4586-a10c-0ab2e0bbb85d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dashboard/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dashboard/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.turtle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/WiredTiger.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/collection-0-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-0-1190505178614225357.wt" afterDir="false" />
@@ -18,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/mongo_data/collection-4--1458238280128869629.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-4--1458238280128869629.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/collection-4-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-4-1190505178614225357.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/collection-6-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/collection-6-1190505178614225357.wt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.2025-09-14T09-36-50Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.2025-09-14T09-36-50Z-00000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/diagnostic.data/metrics.interim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-1-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-1-1190505178614225357.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-3--1458238280128869629.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-3--1458238280128869629.wt" afterDir="false" />
@@ -26,10 +24,9 @@
       <change beforePath="$PROJECT_DIR$/mongo_data/index-5-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-5-1190505178614225357.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-6--1458238280128869629.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-6--1458238280128869629.wt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/index-7-1190505178614225357.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/index-7-1190505178614225357.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo_data/journal/WiredTigerLog.0000000042" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mongo_data/sizeStorer.wt" beforeDir="false" afterPath="$PROJECT_DIR$/mongo_data/sizeStorer.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/postgre_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/postgre_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sentiment_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/sentiment_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_ingestion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_ingestion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

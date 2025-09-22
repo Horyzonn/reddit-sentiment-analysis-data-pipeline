@@ -182,7 +182,7 @@ with tab1:
         # HÀNG 2: Sentiment Timeline
         # ==========================
         if not comments_df.empty:
-            st.markdown("### 📈 Phân tích theo thời gian")
+            st.markdown("### 📈 Biểu đồ theo thời gian")
             comments_df['created_utc'] = pd.to_datetime(comments_df['created_utc'])
             comments_df['date'] = comments_df['created_utc'].dt.normalize()
             comments_df['sentiment_label'] = comments_df['sentiment_label'].str.upper()
@@ -262,7 +262,7 @@ with tab2:
                         "selftext": post.selftext
                     })
 
-                    post.comments.replace_more(limit=0)
+                    post.comments.replace_more(limit=20)
                     for comment in post.comments.list():
                         comments_data.append({
                             "comment_id": comment.id,
